@@ -1,0 +1,23 @@
+# exportPattern("^[[:alpha:]]+")
+# import(parallel)
+# import(ggplot2)
+# import(methods)
+# import(grid)
+export(
+    "classS4Creator",
+    "duplicated2",
+    "extractExpr",
+    "GC",
+    "header",
+    "h",
+    "lsos",
+    "mail",
+    "maxCores",
+    "mclapply2",
+    "readFast",
+    "multiplot",
+    "qqplot.ggplot2",
+    "s.class.ggplot2",
+    "manhattan.ggplot2",
+    "bw"
+)
