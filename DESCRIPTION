@@ -1,11 +1,13 @@
 Package: myScriptsMickael
 Type: Package
-Title: my scripts (Mickael)
-Version: 1.0.0
-Date: 2014-01-15
+Title: My Scripts (Mickael)
+Version: 1.0.1
+Date: 2014-09-30
 Authors@R: c(person("Mickael", "Canouil", role = c("aut", "cre"), email = "mickael.canouil@good.ibl.fr"))
 Description: My personnal scripts (utils)
-License: GPL (>= 2) + file LICENSE
-Depends: R (>= 2.15.0)
+License: GPL (>= 2)
+Depends: R (>= 3.0.0)
 Encoding: UTF-8
 Suggests: methods, ade4, ellipse, parallel, ggplot2, grid, scales
+URL: https://github.com/mcanouil/myScriptsMickael
+BugReports: https://github.com/mcanouil/myScriptsMickael/issues

@@ -20,6 +20,10 @@
 \alias{manhattan.ggplot2}
 \alias{bw}
 \alias{makeReport}
+\alias{colSd}
+\alias{rowSd}
+\alias{colSe}
+\alias{rowSe}
 
 
 \title{~ Internal: myScriptsMickael objects and methods ~}

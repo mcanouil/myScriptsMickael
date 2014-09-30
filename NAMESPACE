@@ -19,5 +19,9 @@ export(
     "qqplot.ggplot2",
     "s.class.ggplot2",
     "manhattan.ggplot2",
-    "bw"
+    "bw",
+    "colSd",
+    "rowSd",
+    "colSe",
+    "rowSe"
 )
