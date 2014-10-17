@@ -15,10 +15,6 @@
 \alias{.scatter.quali.}
 \alias{.var2MuchMod}
 \alias{moviesOrder}
-\alias{qqplot.ggplot2}
-\alias{s.class.ggplot2}
-\alias{manhattan.ggplot2}
-\alias{bw}
 \alias{makeReport}
 \alias{colSd}
 \alias{rowSd}
