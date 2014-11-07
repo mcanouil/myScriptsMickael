@@ -20,6 +20,7 @@
 \alias{rowSd}
 \alias{colSe}
 \alias{rowSe}
+\alias{is.pair}
 
 
 \title{~ Internal: myScriptsMickael objects and methods ~}

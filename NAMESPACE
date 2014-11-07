@@ -19,5 +19,6 @@ export(
     "colSd",
     "rowSd",
     "colSe",
-    "rowSe"
+    "rowSe",
+    "is.pair"
 )
