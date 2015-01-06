@@ -13,7 +13,7 @@ lsos <- function(pos = 1, pattern, order.by = "Size", decreasing = TRUE, head = 
             as.character(class(x))[1]
         })
         obj.mode <- napply(names, mode)
-        obj.type <- sapply(seq(length(obj.class)), function (i) {
+        obj.type <- sapply(seq_along(obj.class), function (i) {
             if (is.na(obj.class[i])) {
                 obj.mode[i]
             } else {

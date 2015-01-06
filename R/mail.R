@@ -15,7 +15,7 @@ mail <- function (from, subject, to, body, attachment) {
     if (missing(attachment)) {
         eMailJoint <- ""
     } else {
-        toAttach <- sapply(seq(length(attachment)), function(attach) {
+        toAttach <- sapply(seq_along(attachment), function(attach) {
             return(!system(paste("test -f", attachment[attach])))
         })
         if (any(toAttach)) {
