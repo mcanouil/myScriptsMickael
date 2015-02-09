@@ -2,8 +2,8 @@ Package: myScriptsMickael
 Type: Package
 Title: My Scripts (Mickael)
 Version: 1.0.7
-Date: 2015-01-15
-Authors@R: c(person("Mickael", "Canouil", role = c("aut", "cre"), email = "mickael.canouil@good.ibl.fr"))
+Date: 2015-02-09
+Authors@R: c(person("Mickael", "Canouil", role = c("aut", "cre"), email = "mickael.canouil@cnrs.fr"))
 Description: My personnal scripts (utils)
 License: GPL (>= 2)
 Depends: R (>= 3.0.0)
