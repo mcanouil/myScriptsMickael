@@ -21,8 +21,8 @@ Encoding: \tab UTF-8\cr
 }}
 
 \seealso{
-Functions : \code{\link{classS4Creator}}, \code{\link{duplicated2}}, \code{\link{extractExpr}}, \code{\link{GC}}, \code{\link{header}},
-            \code{\link{lsos}}, \code{\link{mail}}, \code{\link{maxCores}}, \code{\link{mclapply2}}, \code{\link{readFast}}
+Functions : \code{\link{classS4Creator}}, \code{\link{duplicated2}}, \code{\link{GC}}, \code{\link{header}},
+            \code{\link{lsos}}, \code{\link{mail}}, \code{\link{maxCores}}, \code{\link{mclapply2}}
 }
 
 \author{Mickael Canouil \email{mickael.canouil@good.ibl.fr}}
