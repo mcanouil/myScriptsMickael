@@ -6,7 +6,6 @@
 export(
     "classS4Creator",
     "duplicated2",
-    "extractExpr",
     "GC",
     "header",
     "h",
@@ -14,7 +13,6 @@ export(
     "mail",
     "maxCores",
     "mclapply2",
-    "readFast",
     "multiplot",
     "colSd",
     "rowSd",

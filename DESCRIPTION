@@ -1,7 +1,7 @@
 Package: myScriptsMickael
 Type: Package
 Title: My Scripts (Mickael)
-Version: 1.0.7
+Version: 1.0.8
 Date: 2015-02-09
 Authors@R: c(person("Mickael", "Canouil", role = c("aut", "cre"), email = "mickael.canouil@cnrs.fr"))
 Description: My personnal scripts (utils)
