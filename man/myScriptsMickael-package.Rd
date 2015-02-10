@@ -12,8 +12,8 @@ My personnal scripts (utils)
 \details{\tabular{ll}{
 Package: \tab myScriptsMickael\cr
 Title: \tab my scripts (Mickael)\cr
-Author: \tab Mickael Canouil <mickael.canouil at good.ibl.fr>\cr
-Maintainer: \tab Mickael Canouil <mickael.canouil at good.ibl.fr>\cr
+Author: \tab Mickael Canouil\cr
+Maintainer: \tab Mickael Canouil\cr
 License: \tab GPL (>= 2)\cr
 Depends: \tab R (>= 2.15.0), methods, parallel\cr
 URL: \tab http://www-good.ibl.fr/\cr
