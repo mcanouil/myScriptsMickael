@@ -10,7 +10,7 @@ multiplot
 }
 
 \usage{
-multiplot(..., plotlist = NULL, cols = 1, rows = 1, layout = NULL)
+multiplot(..., plotlist = NULL, rows = 1, cols = 1, layout = NULL)
 }
 
 \arguments{
