@@ -1,7 +1,7 @@
 multiplot <- function (..., plotlist = NULL, rows = 1, cols = 1, layout = NULL) {
     plots <- c(list(...), plotlist)
     numPlots <- length(plots)
-    if (numPlots>1) {
+    if (numPlots>1 & rows*cols<numPlots) {
         dimPlot <- n2mfrow(numPlots)
         rows <- dimPlot[1]
         cols <- dimPlot[2]
