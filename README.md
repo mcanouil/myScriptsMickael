@@ -4,6 +4,8 @@ myScriptsMickael
 
 My personnal scripts (utils)
 
+http://mcanouil.github.io/myScriptsMickael/
+
 ### 1. Install and load myScriptsMickael
 To install the latest development builds directly from GitHub, run this:
 ```r
