@@ -1,5 +1,6 @@
 myScriptsMickael
 ================
+[![Build Status](https://travis-ci.org/mcanouil/myScriptsMickael.svg?branch=master)](https://travis-ci.org/mcanouil/myScriptsMickael)
 
 My personnal scripts (utils)
 
