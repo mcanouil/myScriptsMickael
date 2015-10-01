@@ -1,8 +1,9 @@
 # exportPattern("^[[:alpha:]]+")
-# import(parallel)
-# import(ggplot2)
-# import(methods)
-# import(grid)
+import(parallel)
+import(methods)
+import(grid)
+importFrom("grDevices", "n2mfrow")
+importFrom("utils", "head")
 export(
     "classS4Creator",
     "duplicated2",

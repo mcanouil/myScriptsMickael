@@ -1,5 +1,4 @@
-mclapply2 <- function(X, FUN, ..., mc.preschedule = TRUE, mc.set.seed = TRUE, mc.silent = FALSE,
-                      mc.cores = getOption("mc.cores", 2L), mc.cleanup = TRUE, mc.allow.recursive = TRUE) {
+mclapply2 <- function(X, FUN, ..., mc.preschedule = TRUE, mc.set.seed = TRUE, mc.silent = FALSE, mc.cores = getOption("mc.cores", 2L), mc.cleanup = TRUE, mc.allow.recursive = TRUE) {
     if (Sys.info()[["sysname"]] != "Windows") {
         mc.cores.old <- mc.cores
         sysMemFree <- system("egrep 'MemFree' /proc/meminfo", intern = TRUE)
@@ -11,7 +10,6 @@ mclapply2 <- function(X, FUN, ..., mc.preschedule = TRUE, mc.set.seed = TRUE, mc
             warning(msg, call. = FALSE)
         } else {}
     } else {}
-    require(parallel)
     return(mclapply(X = X, FUN = FUN, ...,
                     mc.preschedule = mc.preschedule, mc.set.seed = mc.set.seed, mc.silent = mc.silent,
                     mc.cores = mc.cores, mc.cleanup = mc.cleanup, mc.allow.recursive = mc.allow.recursive))

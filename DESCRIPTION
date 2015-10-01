@@ -1,13 +1,13 @@
 Package: myScriptsMickael
 Type: Package
 Title: My Scripts (Mickael)
-Version: 1.0.13
-Date: 2015-07-13
+Version: 1.0.14
+Date: 2015-10-01
 Authors@R: c(person("Mickael", "Canouil", role = c("aut", "cre"), email = "mickael.canouil@cnrs.fr"))
-Description: My personnal scripts (utils)
+Description: My personnal scripts (utils).
 License: GPL (>= 2)
-Depends: R (>= 3.0.0), ade4
+Depends: R (>= 3.0.0), methods
+Imports: parallel, grid, utils, grDevices
 Encoding: UTF-8
-Suggests: methods, ellipse, parallel, ggplot2, grid, scales
 URL: https://github.com/mcanouil/myScriptsMickael
 BugReports: https://github.com/mcanouil/myScriptsMickael/issues
