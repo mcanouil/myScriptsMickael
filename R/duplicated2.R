@@ -3,8 +3,8 @@ duplicated2 <- function(x){
         return(dup)
     }
     if (class(x) %in% c("data.frame", "matrix")) {
-        return(duplicated(rbind(x[dup, ], x))[-(1:sum(dup))])
+        return(duplicated(rbind(x[dup, ], x))[-seq_len(sum(dup))])
     } else {
-        return(duplicated(c(x[dup], x))[-(1:sum(dup))])
+        return(duplicated(c(x[dup], x))[-seq_len(sum(dup))])
     }
 }

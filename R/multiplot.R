@@ -8,7 +8,7 @@ multiplot <- function (..., plotlist = NULL, rows = 1, cols = 1, layout = NULL) 
     } else {}
     if (is.null(layout)) {
         # layout <- matrix(seq(1, cols * ceiling(numPlots/cols)), ncol = cols, nrow = rows, byrow = TRUE)
-        layout <- matrix(seq(1, cols * ceiling(numPlots/cols)), nrow = rows, ncol = cols, byrow = TRUE)
+        layout <- matrix(seq_len(cols * ceiling(numPlots/cols)), nrow = rows, ncol = cols, byrow = TRUE)
     } else {}
     if (numPlots==1) {
         print(plots[[1]])

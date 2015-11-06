@@ -25,7 +25,7 @@ lsos <- function(pos = 1, pattern, order.by = "Size", decreasing = TRUE, head = 
         })
         obj.size <- napply(names, utils::object.size)
         obj.dim <- t(napply(names, function(x) {
-            as.numeric(dim(x))[1:2]
+            as.numeric(dim(x))[c(1, 2)]
         }))
         vec <- is.na(obj.dim)[, 1] & (obj.type != "function")
         obj.dim[vec, 1] <- napply(names, length)[vec]

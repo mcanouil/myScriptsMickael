@@ -2,8 +2,8 @@ mclapply2 <- function(X, FUN, ..., mc.preschedule = TRUE, mc.set.seed = TRUE, mc
     if (Sys.info()[["sysname"]] != "Windows") {
         mc.cores.old <- mc.cores
         sysMemFree <- system("egrep 'MemFree' /proc/meminfo", intern = TRUE)
-        sysMemAvailable <- 0.90*as.numeric(unlist(regmatches(sysMemFree, regexec("[0-9]+", sysMemFree))))
-        sysProc <- as.numeric(unlist(strsplit(system(paste("ps v", Sys.getpid()), intern = TRUE)[2], " +"))[8])
+        sysMemAvailable <- 0.90*as.numeric(unlist(regmatches(sysMemFree, regexec("[0-9]+", sysMemFree)), use.names = FALSE))
+        sysProc <- as.numeric(unlist(strsplit(system(paste("ps v", Sys.getpid()), intern = TRUE)[2], " +"), use.names = FALSE)[8])
         mc.cores <- max(min(as.integer(mc.cores), floor(sysMemAvailable/sysProc)), 1)
         if (mc.cores != mc.cores.old) {
             msg <- paste('[mclapply2] To avoid memory overload "mc.cores" was decreased to "', mc.cores, '".', sep = "")

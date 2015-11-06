@@ -29,7 +29,7 @@ classS4Creator <- function(name, field, type, path = getwd()){
     b0 <- '### Class definition ###\n'
     b1 <- paste('setClass(\n    Class = "', name, '", \n    representation = representation(\n', sep = '')
     b2 <- NULL
-    for (i in 1:(lengthField-1)) {
+    for (i in seq_len(lengthField-1)) {
         b2 <- paste(b2, '        ', field[i], ' = "', type[i], '", \n', sep = '')
     }
     b2 <- paste(b2, '        ', field[lengthField], ' = "', type[lengthField], '"\n', sep = '')
@@ -73,7 +73,7 @@ classS4Creator <- function(name, field, type, path = getwd()){
     e0 <- '### Show ###\n'
     e1 <- paste('setMethod(f = "show", signature = "', name, '", definition = function(object){\n    cat("    ~~~ Class:", class(object), "~~~ ")\n', sep = '')
     e2 <- NULL
-    for (i in 1:lengthField) {
+    for (i in seq_len(lengthField)) {
         if (type[i]=="numeric" | type[i]=="character") {
             e2 <- paste(e2, '    cat("\\n ~ ', field[i], ' : ", ifelse(length(object@', field[i], ')==0, NA, ifelse(length(object@', field[i], ')>1, paste("[", length(object@', field[i], '), "] ", paste(head(object@', field[i], '), collapse = " "), sep = ""), object@', field[i], ')), sep = "")\n', sep = '')
         } else {
@@ -104,7 +104,7 @@ classS4Creator <- function(name, field, type, path = getwd()){
     f0 <- '### Getteur ###\n'
     f1 <- paste('setMethod(f = "[", signature = "', name, '", definition = function(x, i, j, drop){\n    switch(EXPR = i, \n', sep = '')
     f2 <- NULL
-    for (i in 1:lengthField) {
+    for (i in seq_len(lengthField)) {
         if (type[i]=="list") {
             f2 <- paste(f2, '        "', field[i], '" = {\n', sep = '')
             f2 <- paste(f2, '            if (missing(j)) {\n', sep = '')
@@ -144,7 +144,7 @@ classS4Creator <- function(name, field, type, path = getwd()){
     g0 <- '### Setteur ###\n'
     g1 <- paste('setMethod(f = "[<-", signature = "', name, '", definition = function(x, i, j, value){\n    switch(EXPR = i, \n', sep = '')
     g2 <- NULL
-    for (i in 1:lengthField) {
+    for (i in seq_len(lengthField)) {
         if (type[i]=="list") {
             g2 <- paste(g2, '       "', field[i], '" = {\n', sep = '')
             g2 <- paste(g2, '            if (missing(j)) {\n', sep = '')
