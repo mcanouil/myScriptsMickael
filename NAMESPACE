@@ -14,7 +14,6 @@ export(
     "mail",
     "maxCores",
     "mclapply2",
-    "multiplot",
     "colSd",
     "rowSd",
     "colSe",
